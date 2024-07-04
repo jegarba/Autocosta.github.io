@@ -1,0 +1,131 @@
+:root {
+    --color-negro: #000000;
+    --color-blanco: #FFFFFF;
+    --color-dorado: #FFD700;
+    --color-gris: #808080;
+}
+
+
+/* Añade más personalizaciones según necesites */
+.card {
+    overflow: visible;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(222, 251, 78, 0.1);
+}
+.card-image-container {
+    position: relative;
+}
+
+.marca-icon-container {
+    position: absolute;
+    bottom: -35px; /* Ajustado para compensar el mayor tamaño */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px; /* Aumentado de 50px a 70px */
+    height: 70px; /* Aumentado de 50px a 70px */
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.marca-icon {
+    max-width: 85%; /* Aumentado ligeramente para aprovechar el espacio adicional */
+    max-height: 85%; /* Aumentado ligeramente para aprovechar el espacio adicional */
+    object-fit: contain;
+}
+
+.card-body {
+    padding-top: 40px; /* Aumentado para dar más espacio al icono más grande */
+}
+
+/* logo */
+#portada {
+    position: relative;
+    padding: 100px 0;
+    
+}
+
+#portada::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('img/logo/portada.jpeg'); /* Reemplaza con la ruta correcta */
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2; /* Ajusta para más o menos difuminado */
+    
+}
+
+#portada h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #000; /* Asegúrate de que el texto sea visible */
+}
+
+#portada .highlight {
+    position: relative;
+    display: inline-block;
+    font-weight: 800; /* Más negrita */
+}
+
+#portada .highlight::after {
+    content: '';
+    position: absolute;
+    left: 15%;
+    bottom: -5px;
+    width: 70%;
+    height: 3px;
+    background-color: #FFD700;
+}
+
+
+/* Estilos para la búsqueda */
+.search-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+
+.filtro-avanzado {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filtro-avanzado h4 {
+    margin-bottom: 20px;
+}
+
+/* Ajusta el margen inferior de los elementos del formulario si es necesario */
+.filtro-avanzado .mb-3:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocosta</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="portada" class="text-center">
+            <div class="container">
+                <h1 class="display-4 mb-4">
+                    <span class="d-block">Invierte y materializa</span>
+                    <span class="highlight fw-bolder">Tu sueño</span>
+                </h1>
+            </div>
+        </section>
+
+        <section id="busqueda">
+            <div class="container">
+                <div class="search-card">
+                    <form id="busqueda-form">
+                        <div class="row g-3">
+                            <div class="col-md-3">
+                                <select class="form-select" id="marca-select">
+                                    <option value="">Todas las marcas</option>
+                                    <option value="CHEVROLET">Chevrolet</option>
+                                    <option value="FORD">Ford</option>
+                                    <option value="KIA">Kia</option>
+                                    <option value="MAZDA">Mazda</option>
+                                    <option value="RENAULT">Renault</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <select class="form-select" id="modelo-select">
+                                    <option value="">Todos los modelos</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="busqueda-input"
+                                    placeholder="Buscar por nombre...">
+                            </div>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary w-100" id="buscar">Buscar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        
+        <section id="catalogo" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestros Autos</h2>
+                <div class="row">
+                    <!-- Columna de filtros -->
+                    <div class="col-lg-3">
+                        <div class="filtro-avanzado">
+                            <h4>Filtros</h4>
+                            <form id="filtro-form">
+                                <!-- Condición -->
+                                <div class="mb-3">
+                                    <label class="form-label">Condición</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="nuevo" id="condicion-nuevo">
+                                        <label class="form-check-label" for="condicion-nuevo">Nuevo</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="usado" id="condicion-usado">
+                                        <label class="form-check-label" for="condicion-usado">Usado</label>
+                                    </div>
+                                </div>
+        
+                                <!-- Kilómetros -->
+                                <div class="mb-3">
+                                    <label class="form-label">Kilómetros</label>
+                                    <select class="form-select" id="kilometros-select">
+                                        <option value="">Todos</option>
+                                        <option value="0">0 km</option>
+                                        <option value="0-30000">0 - 30,000 km</option>
+                                        <option value="30000-100000">30,000 - 100,000 km</option>
+                                        <option value="100000+">100,000 km o más</option>
+                                    </select>
+                                </div>
+        
+                                <!-- Combustible -->
+                                <div class="mb-3">
+                                    <label class="form-label">Tipo de Combustible</label>
+                                    <select class="form-select" id="combustible-select">
+                                        <option value="">Todos</option>
+                                        <option value="gasolina">Gasolina</option>
+                                        <option value="hibrido">Híbrido</option>
+                                        <option value="diesel">Diésel</option>
+                                        <option value="electrico">Eléctrico</option>
+                                        <option value="gasolina-gas">Gasolina y Gas</option>
+                                    </select>
+                                </div>
+        
+                                <!-- Transmisión -->
+                                <div class="mb-3">
+                                    <label class="form-label">Transmisión</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="mecanica" id="transmision-mecanica">
+                                        <label class="form-check-label" for="transmision-mecanica">Mecánica</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="automatica" id="transmision-automatica">
+                                        <label class="form-check-label" for="transmision-automatica">Automática</label>
+                                    </div>
+                                </div>
+        
+                                <!-- Precio -->
+                                <div class="mb-3">
+                                    <label class="form-label">Precio</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="precio-min" placeholder="Mín">
+                                        <input type="number" class="form-control" id="precio-max" placeholder="Máx">
+                                    </div>
+                                </div>
+        
+                                <!-- Modelo (Año) -->
+                                <div class="mb-3">
+                                    <label class="form-label">Modelo (Año)</label>
+                                    <select class="form-select" id="modelo-anio-select">
+                                        <option value="">Todos</option>
+                                        <!-- Aquí puedes generar dinámicamente las opciones de años -->
+                                    </select>
+                                </div>
+        
+                                <button type="submit" class="btn btn-primary w-100">Aplicar Filtros</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Columna de tarjetas de autos -->
+                    <div class="col-lg-9">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="autos-grid">
+                            <!-- Las tarjetas de autos se generarán dinámicamente aquí -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Tu Empresa de Autos. Todos los derechos reservados.</p>
+            <!-- Añade aquí enlaces a redes sociales, información de contacto, etc. -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS y Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tu script personalizado -->
+    <script src="script.js"></script>
+</body>
+
+</html>
