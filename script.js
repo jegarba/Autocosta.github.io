@@ -330,11 +330,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <h5 class="card-title">${auto.marca} ${auto.linea}</h5>
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-calendar-alt"></i> Modelo: ${auto.modelo}</li>
-                                <li><i class="fas fa-gas-pump"></i> Combustible: ${auto.combustible}</li>
-                                <li><i class="fas fa-cogs"></i> Motor: ${auto.motor}</li>
-                                <li><i class="fas fa-cog"></i> Transmisión: ${auto.transmision}</li>
                                 <li><i class="fas fa-road"></i> Kilometraje: ${auto.kilometraje} KM</li>
-                                <li><i class="fas fa-map-marker-alt"></i> Placa: ${auto.placa}</li>
                             </ul>
                             <div class="price-tag">
                                 <span class="price">$${auto.precio}</span>
