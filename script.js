@@ -180,38 +180,78 @@ document.addEventListener('DOMContentLoaded', function () {
 
         cargarAutos(autosFiltrados);
     }
+
     function cargarAutos(autosFiltrados) {
+        const catalogoGrid = document.getElementById('autos-grid');
         catalogoGrid.innerHTML = '';
-        autosFiltrados.forEach(auto => {
+        autosFiltrados.forEach((auto, index) => {
             const autoHTML = `
-                <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-image-container">
-                            <img src="img/autos/auto.jpeg" class="card-img-top" alt="${auto.marca} ${auto.linea}">
-                            <div class="marca-icon-container">
-                                <img src="img/marcas/cy_marcas_${auto.marca.toLowerCase()}@2x.webp" alt="${auto.marca}" class="marca-icon">
-                            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#autoModal" data-auto='${JSON.stringify(auto)}'>
+                    <div class="card-image-container">
+                        <img src="img/autos/auto.jpeg" class="card-img-top" alt="${auto.marca} ${auto.linea}">
+                        <div class="marca-icon-container">
+                            <img src="img/marcas/cy_marcas_${auto.marca.toLowerCase()}@2x.webp" alt="${auto.marca}" class="marca-icon">
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">${auto.marca} ${auto.linea}</h5>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-calendar-alt"></i> Modelo: ${auto.modelo}</li>
-                                <li><i class="fas fa-gas-pump"></i> Combustible: ${auto.combustible}</li>
-                                <li><i class="fas fa-cogs"></i> Motor: ${auto.motor}</li>
-                                <li><i class="fas fa-cog"></i> Transmisión: ${auto.transmision}</li>
-                                <li><i class="fas fa-road"></i> Kilometraje: ${auto.kilometraje} KM</li>
-                                <li><i class="fas fa-map-marker-alt"></i> Placa: ${auto.placa}</li>
-                            </ul>
-                            <div class="price-tag">
-                                <span class="price">$${auto.precio}</span>
-                                ${auto.negociable ? '<span class="negotiable">Negociables</span>' : ''}
-                            </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">${auto.marca} ${auto.linea}</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-calendar-alt"></i> Modelo: ${auto.modelo}</li>
+                            <li><i class="fas fa-road"></i> Kilometraje: ${auto.kilometraje} KM</li>
+                        </ul>
+                        <div class="price-tag">
+                            <span class="price">$${auto.precio}</span>
+                            ${auto.negociable ? '<span class="negotiable">Negociables</span>' : ''}
                         </div>
                     </div>
                 </div>
-            `;
+            </div>
+        `;
             catalogoGrid.innerHTML += autoHTML;
         });
+
+        // Añade el evento de clic a cada tarjeta
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('click', function () {
+                const auto = JSON.parse(this.getAttribute('data-auto'));
+                mostrarModal(auto);
+            });
+        });
+    }
+
+    function mostrarModal(auto) {
+        const modalBody = document.querySelector('#autoModal .modal-body');
+        const autoHTML = `
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/autos/auto.jpeg" class="img-fluid" alt="${auto.marca} ${auto.linea}">
+                </div>
+                <div class="col-md-6">
+                    <h5>${auto.marca} ${auto.linea}</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-calendar-alt"></i> Modelo: ${auto.modelo}</li>
+                        <li><i class="fas fa-gas-pump"></i> Combustible: ${auto.combustible}</li>
+                        <li><i class="fas fa-cogs"></i> Motor: ${auto.motor}</li>
+                        <li><i class="fas fa-cog"></i> Transmisión: ${auto.transmision}</li>
+                        <li><i class="fas fa-road"></i> Kilometraje: ${auto.kilometraje} KM</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Placa: ${auto.placa}</li>
+                    </ul>
+                    <div class="price-tag">
+                        <span class="price">$${auto.precio}</span>
+                        ${auto.negociable ? '<span class="negotiable">Negociables</span>' : ''}
+                    </div>
+                    <p class="mt-3">Aquí van las características y accesorios adicionales o instalados del vehículo.</p>
+                </div>
+            </div>
+        `;
+        modalBody.innerHTML = autoHTML;
+    
+        // Configurar el botón de WhatsApp
+        const whatsappBtn = document.getElementById('whatsapp-btn');
+        const whatsappMessage = `Hola, estoy interesado en el ${auto.marca} ${auto.linea} (Modelo: ${auto.modelo}).`;
+        whatsappBtn.href = `https://wa.me/573016477891?text=${encodeURIComponent(whatsappMessage)}`;
     }
 
     cargarAutos(autos);
