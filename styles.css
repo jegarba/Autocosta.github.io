@@ -114,18 +114,18 @@
 
 
 
-.filtro-avanzado {
+#filtro-avanzado {
     background-color: #f8f9fa;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.filtro-avanzado h4 {
+#filtro-avanzado h4 {
     margin-bottom: 20px;
 }
 
 /* Ajusta el margen inferior de los elementos del formulario si es necesario */
-.filtro-avanzado .mb-3:last-child {
+#filtro-avanzado .mb-3:last-child {
     margin-bottom: 0;
 }

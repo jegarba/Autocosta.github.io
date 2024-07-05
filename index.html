@@ -77,29 +77,41 @@
         </section>
 
 
-        
+
         <section id="catalogo" class="py-5">
             <div class="container">
                 <h2 class="text-center mb-5">Nuestros Autos</h2>
                 <div class="row">
                     <!-- Columna de filtros -->
                     <div class="col-lg-3">
-                        <div class="filtro-avanzado">
+
+
+                        <!-- Botón toggle para versión móvil -->
+                        <button class="btn btn-primary d-lg-none mb-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#filtro-avanzado" aria-controls="filtro-avanzado" aria-expanded="false"
+                            aria-label="Toggle filter">
+                            <i class="fas fa-filter"></i> Mostrar filtros
+                        </button>
+
+
+                        <div class="collapse d-lg-block" id="filtro-avanzado">
                             <h4>Filtros</h4>
                             <form id="filtro-form">
                                 <!-- Condición -->
                                 <div class="mb-3">
                                     <label class="form-label">Condición</label>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="nuevo" id="condicion-nuevo">
+                                        <input class="form-check-input" type="checkbox" value="nuevo"
+                                            id="condicion-nuevo">
                                         <label class="form-check-label" for="condicion-nuevo">Nuevo</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="usado" id="condicion-usado">
+                                        <input class="form-check-input" type="checkbox" value="usado"
+                                            id="condicion-usado">
                                         <label class="form-check-label" for="condicion-usado">Usado</label>
                                     </div>
                                 </div>
-        
+
                                 <!-- Kilómetros -->
                                 <div class="mb-3">
                                     <label class="form-label">Kilómetros</label>
@@ -111,7 +123,7 @@
                                         <option value="100000+">100,000 km o más</option>
                                     </select>
                                 </div>
-        
+
                                 <!-- Combustible -->
                                 <div class="mb-3">
                                     <label class="form-label">Tipo de Combustible</label>
@@ -124,20 +136,22 @@
                                         <option value="gasolina-gas">Gasolina y Gas</option>
                                     </select>
                                 </div>
-        
+
                                 <!-- Transmisión -->
                                 <div class="mb-3">
                                     <label class="form-label">Transmisión</label>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="mecanica" id="transmision-mecanica">
+                                        <input class="form-check-input" type="checkbox" value="mecanica"
+                                            id="transmision-mecanica">
                                         <label class="form-check-label" for="transmision-mecanica">Mecánica</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="automatica" id="transmision-automatica">
+                                        <input class="form-check-input" type="checkbox" value="automatica"
+                                            id="transmision-automatica">
                                         <label class="form-check-label" for="transmision-automatica">Automática</label>
                                     </div>
                                 </div>
-        
+
                                 <!-- Precio -->
                                 <div class="mb-3">
                                     <label class="form-label">Precio</label>
@@ -146,7 +160,7 @@
                                         <input type="number" class="form-control" id="precio-max" placeholder="Máx">
                                     </div>
                                 </div>
-        
+
                                 <!-- Modelo (Año) -->
                                 <div class="mb-3">
                                     <label class="form-label">Modelo (Año)</label>
@@ -155,12 +169,12 @@
                                         <!-- Aquí puedes generar dinámicamente las opciones de años -->
                                     </select>
                                 </div>
-        
+
                                 <button type="submit" class="btn btn-primary w-100">Aplicar Filtros</button>
                             </form>
                         </div>
                     </div>
-                    
+
                     <!-- Columna de tarjetas de autos -->
                     <div class="col-lg-9">
                         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="autos-grid">
