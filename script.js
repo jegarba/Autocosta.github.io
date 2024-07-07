@@ -22,15 +22,15 @@ document.addEventListener('DOMContentLoaded', function () {
             precio: "65,000,000",
             negociable: true,
             imagenes: [
-                'img/autos/auto1.jpeg',
-                'img/autos/auto2.jpeg',
-                'img/autos/auto3.jpeg',
-                'img/autos/auto4.jpeg',
-                'img/autos/auto5.jpeg',
-                'img/autos/auto6.jpeg',
-                'img/autos/auto7.jpeg',
-                'img/autos/auto8.jpeg',
-                'img/autos/auto9.jpeg'
+                'img/autos/auto1.webp',
+                'img/autos/auto2.webp',
+                'img/autos/auto3.webp',
+                'img/autos/auto4.webp',
+                'img/autos/auto5.webp',
+                'img/autos/auto6.webp',
+                'img/autos/auto7.webp',
+                'img/autos/auto8.webp',
+                'img/autos/auto9.webp'
             ]
         },
         {
@@ -45,15 +45,15 @@ document.addEventListener('DOMContentLoaded', function () {
             precio: "120,000,000",
             negociable: false,
             imagenes: [
-                'img/autos/auto1.jpeg',
-                'img/autos/auto2.jpeg',
-                'img/autos/auto3.jpeg',
-                'img/autos/auto4.jpeg',
-                'img/autos/auto5.jpeg',
-                'img/autos/auto6.jpeg',
-                'img/autos/auto7.jpeg',
-                'img/autos/auto8.jpeg',
-                'img/autos/auto9.jpeg'
+                'img/autos/auto1.webp',
+                'img/autos/auto2.webp',
+                'img/autos/auto3.webp',
+                'img/autos/auto4.webp',
+                'img/autos/auto5.webp',
+                'img/autos/auto6.webp',
+                'img/autos/auto7.webp',
+                'img/autos/auto8.webp',
+                'img/autos/auto9.webp'
             ]
         },
         {
@@ -68,15 +68,15 @@ document.addEventListener('DOMContentLoaded', function () {
             precio: "85,000,000",
             negociable: true,
             imagenes: [
-                'img/autos/auto1.jpeg',
-                'img/autos/auto2.jpeg',
-                'img/autos/auto3.jpeg',
-                'img/autos/auto4.jpeg',
-                'img/autos/auto5.jpeg',
-                'img/autos/auto6.jpeg',
-                'img/autos/auto7.jpeg',
-                'img/autos/auto8.jpeg',
-                'img/autos/auto9.jpeg'
+                'img/autos/auto1.webp',
+                'img/autos/auto2.webp',
+                'img/autos/auto3.webp',
+                'img/autos/auto4.webp',
+                'img/autos/auto5.webp',
+                'img/autos/auto6.webp',
+                'img/autos/auto7.webp',
+                'img/autos/auto8.webp',
+                'img/autos/auto9.webp'
             ]
         },
         {
@@ -91,15 +91,15 @@ document.addEventListener('DOMContentLoaded', function () {
             precio: "110,000,000",
             negociable: false,
             imagenes: [
-                'img/autos/auto1.jpeg',
-                'img/autos/auto2.jpeg',
-                'img/autos/auto3.jpeg',
-                'img/autos/auto4.jpeg',
-                'img/autos/auto5.jpeg',
-                'img/autos/auto6.jpeg',
-                'img/autos/auto7.jpeg',
-                'img/autos/auto8.jpeg',
-                'img/autos/auto9.jpeg'
+                'img/autos/auto1.webp',
+                'img/autos/auto2.webp',
+                'img/autos/auto3.webp',
+                'img/autos/auto4.webp',
+                'img/autos/auto5.webp',
+                'img/autos/auto6.webp',
+                'img/autos/auto7.webp',
+                'img/autos/auto8.webp',
+                'img/autos/auto9.webp'
             ]
         },
         {
@@ -114,15 +114,15 @@ document.addEventListener('DOMContentLoaded', function () {
             precio: "45,000,000",
             negociable: true,
             imagenes: [
-                'img/autos/auto1.jpeg',
-                'img/autos/auto2.jpeg',
-                'img/autos/auto3.jpeg',
-                'img/autos/auto4.jpeg',
-                'img/autos/auto5.jpeg',
-                'img/autos/auto6.jpeg',
-                'img/autos/auto7.jpeg',
-                'img/autos/auto8.jpeg',
-                'img/autos/auto9.jpeg'
+                'img/autos/auto1.webp',
+                'img/autos/auto2.webp',
+                'img/autos/auto3.webp',
+                'img/autos/auto4.webp',
+                'img/autos/auto5.webp',
+                'img/autos/auto6.webp',
+                'img/autos/auto7.webp',
+                'img/autos/auto8.webp',
+                'img/autos/auto9.webp'
             ]
         },
         {
@@ -137,15 +137,15 @@ document.addEventListener('DOMContentLoaded', function () {
             precio: "95,000,000",
             negociable: false,
             imagenes: [
-                'img/autos/auto1.jpeg',
-                'img/autos/auto2.jpeg',
-                'img/autos/auto3.jpeg',
-                'img/autos/auto4.jpeg',
-                'img/autos/auto5.jpeg',
-                'img/autos/auto6.jpeg',
-                'img/autos/auto7.jpeg',
-                'img/autos/auto8.jpeg',
-                'img/autos/auto9.jpeg'
+                'img/autos/auto1.webp',
+                'img/autos/auto2.webp',
+                'img/autos/auto3.webp',
+                'img/autos/auto4.webp',
+                'img/autos/auto5.webp',
+                'img/autos/auto6.webp',
+                'img/autos/auto7.webp',
+                'img/autos/auto8.webp',
+                'img/autos/auto9.webp'
             ]
         },
         {
@@ -160,15 +160,15 @@ document.addEventListener('DOMContentLoaded', function () {
             precio: "75,000,000",
             negociable: true,
             imagenes: [
-                'img/autos/auto1.jpeg',
-                'img/autos/auto2.jpeg',
-                'img/autos/auto3.jpeg',
-                'img/autos/auto4.jpeg',
-                'img/autos/auto5.jpeg',
-                'img/autos/auto6.jpeg',
-                'img/autos/auto7.jpeg',
-                'img/autos/auto8.jpeg',
-                'img/autos/auto9.jpeg'
+                'img/autos/auto1.webp',
+                'img/autos/auto2.webp',
+                'img/autos/auto3.webp',
+                'img/autos/auto4.webp',
+                'img/autos/auto5.webp',
+                'img/autos/auto6.webp',
+                'img/autos/auto7.webp',
+                'img/autos/auto8.webp',
+                'img/autos/auto9.webp'
             ]
         },
         {
@@ -183,15 +183,15 @@ document.addEventListener('DOMContentLoaded', function () {
             precio: "140,000,000",
             negociable: false,
             imagenes: [
-                'img/autos/auto1.jpeg',
-                'img/autos/auto2.jpeg',
-                'img/autos/auto3.jpeg',
-                'img/autos/auto4.jpeg',
-                'img/autos/auto5.jpeg',
-                'img/autos/auto6.jpeg',
-                'img/autos/auto7.jpeg',
-                'img/autos/auto8.jpeg',
-                'img/autos/auto9.jpeg'
+                'img/autos/auto1.webp',
+                'img/autos/auto2.webp',
+                'img/autos/auto3.webp',
+                'img/autos/auto4.webp',
+                'img/autos/auto5.webp',
+                'img/autos/auto6.webp',
+                'img/autos/auto7.webp',
+                'img/autos/auto8.webp',
+                'img/autos/auto9.webp'
             ]
         },
         {
@@ -206,15 +206,15 @@ document.addEventListener('DOMContentLoaded', function () {
             precio: "160,000,000",
             negociable: true,
             imagenes: [
-                'img/autos/auto1.jpeg',
-                'img/autos/auto2.jpeg',
-                'img/autos/auto3.jpeg',
-                'img/autos/auto4.jpeg',
-                'img/autos/auto5.jpeg',
-                'img/autos/auto6.jpeg',
-                'img/autos/auto7.jpeg',
-                'img/autos/auto8.jpeg',
-                'img/autos/auto9.jpeg'
+                'img/autos/auto1.webp',
+                'img/autos/auto2.webp',
+                'img/autos/auto3.webp',
+                'img/autos/auto4.webp',
+                'img/autos/auto5.webp',
+                'img/autos/auto6.webp',
+                'img/autos/auto7.webp',
+                'img/autos/auto8.webp',
+                'img/autos/auto9.webp'
             ]
         },
         {
@@ -229,15 +229,15 @@ document.addEventListener('DOMContentLoaded', function () {
             precio: "70,000,000",
             negociable: false,
             imagenes: [
-                'img/autos/auto1.jpeg',
-                'img/autos/auto2.jpeg',
-                'img/autos/auto3.jpeg',
-                'img/autos/auto4.jpeg',
-                'img/autos/auto5.jpeg',
-                'img/autos/auto6.jpeg',
-                'img/autos/auto7.jpeg',
-                'img/autos/auto8.jpeg',
-                'img/autos/auto9.jpeg'
+                'img/autos/auto1.webp',
+                'img/autos/auto2.webp',
+                'img/autos/auto3.webp',
+                'img/autos/auto4.webp',
+                'img/autos/auto5.webp',
+                'img/autos/auto6.webp',
+                'img/autos/auto7.webp',
+                'img/autos/auto8.webp',
+                'img/autos/auto9.webp'
             ]
         },
         {
@@ -252,15 +252,15 @@ document.addEventListener('DOMContentLoaded', function () {
             precio: "80,000,000",
             negociable: true,
             imagenes: [
-                'img/autos/auto1.jpeg',
-                'img/autos/auto2.jpeg',
-                'img/autos/auto3.jpeg',
-                'img/autos/auto4.jpeg',
-                'img/autos/auto5.jpeg',
-                'img/autos/auto6.jpeg',
-                'img/autos/auto7.jpeg',
-                'img/autos/auto8.jpeg',
-                'img/autos/auto9.jpeg'
+                'img/autos/auto1.webp',
+                'img/autos/auto2.webp',
+                'img/autos/auto3.webp',
+                'img/autos/auto4.webp',
+                'img/autos/auto5.webp',
+                'img/autos/auto6.webp',
+                'img/autos/auto7.webp',
+                'img/autos/auto8.webp',
+                'img/autos/auto9.webp'
             ]
         },
         {
@@ -275,15 +275,15 @@ document.addEventListener('DOMContentLoaded', function () {
             precio: "130,000,000",
             negociable: false,
             imagenes: [
-                'img/autos/auto1.jpeg',
-                'img/autos/auto2.jpeg',
-                'img/autos/auto3.jpeg',
-                'img/autos/auto4.jpeg',
-                'img/autos/auto5.jpeg',
-                'img/autos/auto6.jpeg',
-                'img/autos/auto7.jpeg',
-                'img/autos/auto8.jpeg',
-                'img/autos/auto9.jpeg'
+                'img/autos/auto1.webp',
+                'img/autos/auto2.webp',
+                'img/autos/auto3.webp',
+                'img/autos/auto4.webp',
+                'img/autos/auto5.webp',
+                'img/autos/auto6.webp',
+                'img/autos/auto7.webp',
+                'img/autos/auto8.webp',
+                'img/autos/auto9.webp'
             ]
         }
     ];
@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="col">
                     <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#autoModal" data-auto='${JSON.stringify(auto)}'>
                         <div class="card-image-container">
-                            <img src="img/autos/auto.jpeg" class="card-img-top" alt="${auto.marca} ${auto.linea}">
+                            <img src="img/autos/auto.webp" class="card-img-top" alt="${auto.marca} ${auto.linea}">
                             <div class="marca-icon-container">
                                 <img src="img/marcas/cy_marcas_${auto.marca.toLowerCase()}@2x.webp" alt="${auto.marca}" class="marca-icon">
                             </div>
@@ -399,7 +399,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Configurar el botón de WhatsApp
         const whatsappBtn = document.getElementById('whatsapp-btn');
         const whatsappMessage = `Hola, estoy interesado en el ${auto.marca} ${auto.linea} (Modelo: ${auto.modelo}).`;
-        whatsappBtn.href = `https://wa.me/573000000000?text=${encodeURIComponent(whatsappMessage)}`;
+        whatsappBtn.href = `https://wa.me/573016477891?text=${encodeURIComponent(whatsappMessage)}`;
     }
 
     cargarAutos(autos);

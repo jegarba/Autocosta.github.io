@@ -60,7 +60,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('img/logo/portada.jpeg'); /* Reemplaza con la ruta correcta */
+    background-image: url('img/logo/portada.webp'); /* Reemplaza con la ruta correcta */
     background-position: center;
     background-size: cover;
     opacity: 0.2; /* Ajusta para más o menos difuminado */
